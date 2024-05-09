@@ -5,6 +5,8 @@ import { SignIn2Component } from './pages/sign-in-2/sign-in-2.component';
 import { ForgetPasswordComponent } from './pages/forget-password/forget-password.component';
 import { SearchResultsComponent } from './pages/search-results/search-results.component';
 import { JobPostDetailComponent } from './pages/job-post-detail/job-post-detail.component';
+import {PersonalJobSeekerComponent} from './pages/personal-jobseeker/personal-jobseeker.component';
+import {PersonalEmployerComponent} from './pages/personal-employer/personal-employer.component';
 
 
 
@@ -15,6 +17,9 @@ export const routes: Routes = [
   { path: 'forget-password', component: ForgetPasswordComponent, pathMatch:'full'},
   { path: 'search-result', component: SearchResultsComponent, pathMatch:'full'},
   { path: 'job-post', component: JobPostDetailComponent, pathMatch:'full'},
+  { path: 'personal-jobseeker', component: PersonalJobSeekerComponent, pathMatch:'full'},
+  {path:'personal-employer', component: PersonalEmployerComponent , pathMatch:'full'},
+
 
 
 
