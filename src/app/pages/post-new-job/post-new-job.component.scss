@@ -8,14 +8,12 @@ body{
     padding: 0; 
     overflow-x: hidden;
 }
+
 .form-control{
   margin-top: 3px;
   border: 1px solid $dark-teal; 
   border-radius: 10px;
   outline: none; 
-}
-.form-check-input {
-  border: 1px solid $dark-teal;
 }
 .color-1{
   color: $light-turtoise;
@@ -257,49 +255,6 @@ input[type="file"] {
 .title{
   @include font-h4-extra-bold;
 }
-.sub-label{
-  @include font-h5-extra-bold
-
-}
 .sub-title{
   @include font-medium-medium;
-}
-
-  .icon-cate{
-    width: 85px;
-    height: 85px;
-  }
-  .text{
-    @include font-medium-medium;
-  }
-  .title{
-    @include font-h4-extra-bold;
-  }
-  .sub-title{
-    @include font-medium-medium;
-  }
-  .img{
-    border: 5px solid $light-turtoise;
-    border-radius: 50%;
-    width: 280px;
-    height: 280px;
-}
-input[type="file"] {
-    display: none;
-}
-.opacity{
-    opacity: 0.5;
-}
-.box {
-    margin: 0 auto;
-    padding: 10px;
-    width: 400px;
-    border-style: dashed;
-    border-radius:20px ;
-    border-color: $light-turtoise;
-}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }

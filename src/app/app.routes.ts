@@ -7,7 +7,9 @@ import { SearchResultsComponent } from './pages/search-results/search-results.co
 import { JobPostDetailComponent } from './pages/job-post-detail/job-post-detail.component';
 import {PersonalJobSeekerComponent} from './pages/personal-jobseeker/personal-jobseeker.component';
 import {PersonalEmployerComponent} from './pages/personal-employer/personal-employer.component';
-
+import { PostNewJobComponent } from './pages/post-new-job/post-new-job.component';
+import { JobCategoriesComponent } from './pages/job-categories/job-categories.component';
+import { ApplyCVComponent } from './pages/apply-cv/apply-cv.component';
 
 
 export const routes: Routes = [
@@ -18,8 +20,10 @@ export const routes: Routes = [
   { path: 'search-result', component: SearchResultsComponent, pathMatch:'full'},
   { path: 'job-post', component: JobPostDetailComponent, pathMatch:'full'},
   { path: 'personal-jobseeker', component: PersonalJobSeekerComponent, pathMatch:'full'},
-  {path:'personal-employer', component: PersonalEmployerComponent , pathMatch:'full'},
-
+  { path: 'personal-employer', component: PersonalEmployerComponent , pathMatch:'full'},
+  { path: 'post-new-job', component: PostNewJobComponent, pathMatch:'full'},
+  { path: 'categories', component: JobCategoriesComponent, pathMatch:'full'},
+  { path: 'apply-cv', component: ApplyCVComponent, pathMatch:'full'}
 
 
 
