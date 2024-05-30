@@ -7,6 +7,11 @@ import { SearchResultsComponent } from './pages/search-results/search-results.co
 import { JobPostDetailComponent } from './pages/job-post-detail/job-post-detail.component';
 import {PersonalJobSeekerComponent} from './pages/personal-jobseeker/personal-jobseeker.component';
 import {PersonalEmployerComponent} from './pages/personal-employer/personal-employer.component';
+import {ListAppliedJobComponent} from './pages/list-applied-job/list-applied-job.component';
+import {FavListComponent} from './pages/fav-list/fav-list.component';
+import {PostListComponent} from './pages/post-list/post-list.component';
+import {ApplicantListComponent} from './pages/applicant-list/applicant-list.component';
+
 import { PostNewJobComponent } from './pages/post-new-job/post-new-job.component';
 import { JobCategoriesComponent } from './pages/job-categories/job-categories.component';
 import { ApplyCVComponent } from './pages/apply-cv/apply-cv.component';
@@ -21,6 +26,10 @@ export const routes: Routes = [
   { path: 'job-post', component: JobPostDetailComponent, pathMatch:'full'},
   { path: 'personal-jobseeker', component: PersonalJobSeekerComponent, pathMatch:'full'},
   { path: 'personal-employer', component: PersonalEmployerComponent , pathMatch:'full'},
+  {path:'list-applied-job',component: ListAppliedJobComponent, pathMatch:'full'},
+  {path:'fav-list',component: FavListComponent, pathMatch:'full'},
+  {path:'post-list',component: PostListComponent, pathMatch:'full'},
+  {path:'applicant-list',component: ApplicantListComponent, pathMatch:'full'}
   { path: 'post-new-job', component: PostNewJobComponent, pathMatch:'full'},
   { path: 'categories', component: JobCategoriesComponent, pathMatch:'full'},
   { path: 'apply-cv', component: ApplyCVComponent, pathMatch:'full'}
