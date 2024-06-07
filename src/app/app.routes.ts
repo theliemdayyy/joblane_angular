@@ -11,6 +11,8 @@ import {ListAppliedJobComponent} from './pages/list-applied-job/list-applied-job
 import {FavListComponent} from './pages/fav-list/fav-list.component';
 import {PostListComponent} from './pages/post-list/post-list.component';
 import {ApplicantListComponent} from './pages/applicant-list/applicant-list.component';
+import {HomepageComponent} from './pages/homepage/homepage.component';
+
 
 
 
@@ -27,7 +29,8 @@ export const routes: Routes = [
   {path:'list-applied-job',component: ListAppliedJobComponent, pathMatch:'full'},
   {path:'fav-list',component: FavListComponent, pathMatch:'full'},
   {path:'post-list',component: PostListComponent, pathMatch:'full'},
-  {path:'applicant-list',component: ApplicantListComponent, pathMatch:'full'}
+  {path:'applicant-list',component: ApplicantListComponent, pathMatch:'full'},
+  {path:'homepage',component: HomepageComponent, pathMatch:'full'}
 
 
 
