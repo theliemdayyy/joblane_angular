@@ -1,15 +1,46 @@
 <app-header></app-header>
 
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Home Page</a></li>
-        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">2,629 Marketing Associate Jobs Available</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">AEON FUTURE LEADERS PROGRAM (AEON FUTURE LEADERS) - AEON
-            HUE 2024</li>
-    </ol>
-</nav>
-<div class="content d-flex">
+
+<div class="background-div">
+    <div class="container-fluid">
+        <div class="search-bar row mt-5">
+            <div class="col search-container">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><img src="assets/icons/Work.svg" alt="Job Icon"></span>
+                    </div>
+                    <input type="text" class="form-control search-input" placeholder="Job Title"
+                        aria-label="Job Title">
+
+                    <div class="search-divider"></div>
+
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><img src="assets/icons/Pin.svg" alt="Location Icon"></span>
+                    </div>
+                    <select class="custom-select search-select" id="locationDropdown">
+                        <option selected>Location</option>
+                    </select>
+
+                    <div class="search-divider"></div>
+
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><img src="assets/icons/Category.svg"
+                                alt="Category Icon"></span>
+                    </div>
+                    <select class="custom-select search-select" id="categoriesDropdown">
+                        <option selected>Categories</option>
+                    </select>
+                </div>
+                <button class="d-flex search-button align-items-center">
+                    <img src="assets/icons/Search.svg" alt="search" class="mr-2">
+                    Search
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex justify-content-center my-5">
     <div class="company d-flex flex-column">
         <img src="assets/img/Logo/Company_Aeon.svg" alt="logo" class="company-logo align-self-center">
         <div class="company-name align-self-center">
@@ -32,49 +63,49 @@
             </div>
         </div>
     </div>
-    <div class="detail_job">
+    <div class="detail_job mx-5">
         <div class="author d-flex align-items-end">
-            <img src="assets/img/Logo/Company_Aeon.svg" alt="logo" class="author-ava mr-2">
-            <div class="d-flex flex-column">
+            <img src="assets/img/Logo/Company_Aeon.svg" alt="logo" class="author-ava">
+            <div class="d-flex flex-column mx-2">
                 <div class="name">
                     Thu Hang Nguyen
                 </div>
                 <div class="time d-flex align-items-center">
                     <img src="assets/icons/Clock.svg" alt="time">
-                    20/10/2023
+                    <span class="mx-1">20/10/2023</span>
                 </div>
             </div>
 
         </div>
-        <div class="title">
+        <div class="title my-2">
             [HN/Hue] AEON Vietnam Hiring for the Future Leaders Program (AEON Future Leaders) - AEON Hue 2024
         </div>
-        <img src="assets/img/Logo/Poster.svg" alt="poster" class="poster d-block mx-auto">
+        <img src="assets/img/Logo/Poster.svg" alt="poster" class="poster d-block my-3">
         <div class="tag d-flex justify-content-center">
             <div class="row">
                 <div class="col-md-6 mb-3 d-flex align-items-center">
-                    <img src="assets/icons/Pin.svg" alt="location" class="mr-2">
-                    Location: Hue
+                    <img src="assets/icons/Pin.svg" alt="location">
+                    <span class="mx-3">Location: Hue</span>
                 </div>
                 <div class="col-md-6 mb-3 d-flex align-items-center">
                     <img src="assets/icons/Clock.svg" alt="experiences" class="mr-2">
-                    Experiences: 1-2 years
+                    <span class="mx-3">Experiences: 1-2 years</span>
                 </div>
                 <div class="col-md-6 mb-3 d-flex align-items-center">
                     <img src="assets/icons/Work.svg" alt="jobs type" class="mr-2">
-                    Jobs Type: Fulltime
+                    <span class="mx-3">Jobs Type: Fulltime</span>
                 </div>
                 <div class="col-md-6 mb-3 d-flex align-items-center">
-                    <img src="assets/icons/menu-burger 1.svg" alt="specialization" class="mr-2">
-                    Specialization: Sales
+                    <img src="assets/icons/Menu.png" alt="specialization" class="mr-2">
+                    <span class="mx-3">Specialization: Sales</span>
                 </div>
                 <div class="col-10 mb-3 d-flex align-items-center">
                     <img src="assets/icons/Money.svg" alt="salary" class="mr-2">
-                    Salary Range: 12.000.000 - 17.000.000 VND
+                    <span class="mx-3">Salary Range: 12.000.000 - 17.000.000 VND</span>
                 </div>
                 <div class="col-10 mb-3 d-flex align-items-center">
                     <img src="assets/icons/Relume.svg" alt="campany type" class="mr-2">
-                    Company Type: International Company
+                    <span class="mx-3">Company Type: International Company</span>
                 </div>
             </div>
         </div>

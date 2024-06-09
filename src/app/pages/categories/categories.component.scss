@@ -13,6 +13,7 @@ button {
     align-items: center;
     color: white;
     transition: all 0.2s ease-in-out; 
+    width: fit-content;
     padding: 10px;
     border-radius: 100px;
     border: none;
@@ -54,10 +55,12 @@ button {
 .color-1{
     color: $light-turtoise;
   }
-  .color-2{
-    color: $dark-teal;
-  }
-  
+.color-2{
+color: $dark-teal;
+}
+.h2{
+    @include font-h2-extra-bold;
+}
 .background-div {
     background-image: url('/assets/img/BG2.svg');
     background-size: cover;
@@ -88,18 +91,6 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.h4{
-    @include font-h4-extra-bold;
-}
-h5{
-    @include font-h5-extra-bold;
-}
-.content{
-    width: 100%;
-    @include font-medium-normal;
-    white-space: normal;
-
 }
 
 
@@ -164,169 +155,41 @@ h5{
     }
 }
 
-
-.image{
-    height: 300px;
-    margin-bottom: 20px;
+.section{
+    padding: 20px 44px;
 }
-.image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-
-
-.h6{
-    @include font-h6-extra-bold;
-}
-.text{
-    @include font-medium-normal;
-}
-
-
-hr {
-    border: none; 
-    height: 2px; 
-    background-color: $dark-teal; 
+.job-cate-item{
+    border: 2px solid $light-turtoise;
+    border-radius: 20px; 
     margin: 12px;
-  }
- 
-.search-button{
-    background-color: $light-turtoise;
-    align-items: center;
-    justify-content: center;
+    width: 440px; 
+    height: 240px;
+    text-decoration: none;
     color: $dark-teal;
-    padding: 8px 16px;
-    border-radius: 100px;
-    border: 2px solid $light-turtoise;
-    @include font-large-medium;
-
-  }
-  .search-button:hover{
-    background-color: transparent;
-    color: $dark-teal;
-    border: 2px solid $light-turtoise;
-  }
-  .search-button img{
-    width: 24px;
-    height: 24px;
-    margin-right: 4px;
-  }
-
-//============================================//
-.w-75{
-    width: 70%;
-
-}
-.w-25{
-    width: 20%;
-}
-.w-60{
-    width: 60%;
-}
-.container-bor{
-    border: 1px solid $light-turtoise;
-    border-radius: 20px;
-    margin: 20px;
-    padding: 32px;
-
-}
-.container-non-bor{
-    background-image: url('/assets/img/company_bg.png');
-    background-size: cover;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-position: center center;}
-.title{
-    @include font-h1-extra-bold;
-}
-.info{
-    @include font-large-bold;
-    margin-bottom: 8px;
-}
-.info img{
-    width: 32px;
-    height: 32px;
-    margin-right: 12px;
-}
-
-
-.result-item{
-    background-color: $white;
-    width: fit-content;
-    border-radius: 20px;
     padding: 20px;
-    margin-top: 20px;
-    border: 1px solid $dark-teal;
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* This adds a subtle shadow */
+    text-align: left; 
+    background: $white; 
+    margin-bottom: 24px; 
+}
+.icon-cate{
+    width: 85px;
+    height: 85px;
+}
+.job-name{
+    @include font-h2-extra-bold;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    width: 320px; 
 }
 
-.infor{
-    .job-name{
-        @include font-h5-extra-bold;
-    }
-    .company{
-        @include font-large-normal;
-    }
-
+.job-cate-item:hover {
+    text-decoration: none; 
+    color: darken($light-turtoise, 10%); 
+}
+.detail{
+    @include font-large-normal
 }
 
 
-.tag{
-    .location{
-        @include font-medium-normal;
-        border-radius: 12px;
-        padding: 0px 12px;
-        background-color: $light-turtoise;
-        margin-right: 8px;
-    
-    }
-    .time{
-        @include font-medium-normal;
-        border-radius: 12px;
-        padding: 0px 12px;
-        background-color: $light-turtoise;
-    }
-
-}
-
-.salary{
-    @include font-large-semi-bold;
-    color: $light-turtoise;
-   
-}
-.bookmark-checkbox {
-    display: none;   
-    &:checked + .bookmark-icon img {
-      content: url('/assets/icons/Save_Active.svg'); 
-    }
-  }
-  
-  .bookmark-btn {
-    cursor: pointer;
-    display: inline-block;
-  
-    .bookmark-icon {
-      display: inline-block;
-      width: 48px; 
-      height: 48px; 
-  
-      img {
-        width: 100%;
-        height: auto;
-        transition: content 0.3s ease; 
-      }
-    }
-  }
-.result-list-slider {
-    .slick-slide {
-        display: flex !important;
-        flex-direction: column;
-    }
-
-}
-
-  
- 

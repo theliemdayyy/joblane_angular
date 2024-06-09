@@ -13,6 +13,7 @@ import {PostListComponent} from './pages/post-list/post-list.component';
 import {ApplicantListComponent} from './pages/applicant-list/applicant-list.component';
 import {HomepageComponent} from './pages/homepage/homepage.component';
 import { CompanyComponent } from './pages/company/company.component';
+import { CategoriesComponent } from './pages/categories/categories.component';
 
 
 
@@ -32,7 +33,9 @@ export const routes: Routes = [
   {path:'post-list',component: PostListComponent, pathMatch:'full'},
   {path:'applicant-list',component: ApplicantListComponent, pathMatch:'full'},
   {path:'homepage',component: HomepageComponent, pathMatch:'full'},
-  {path:'company',component: CompanyComponent, pathMatch:'full'}
+  {path:'company',component: CompanyComponent, pathMatch:'full'},
+  {path:'categories',component: CategoriesComponent, pathMatch:'full'}
+
 
 
 
