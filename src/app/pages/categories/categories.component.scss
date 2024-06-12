@@ -1,5 +1,9 @@
 @import '../../../style/variables';
 @import '../../../style/typography';
+.main-content{
+    flex: 1;
+    padding: 20px;
+}
 body{
     font-family: $font-default;
     background-color: white;

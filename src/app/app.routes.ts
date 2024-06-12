@@ -11,9 +11,13 @@ import {ListAppliedJobComponent} from './pages/list-applied-job/list-applied-job
 import {FavListComponent} from './pages/fav-list/fav-list.component';
 import {PostListComponent} from './pages/post-list/post-list.component';
 import {ApplicantListComponent} from './pages/applicant-list/applicant-list.component';
-import {HomepageComponent} from './pages/homepage/homepage.component';
 import { CompanyComponent } from './pages/company/company.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
+import { JobSeekerComponent } from './pages/admin/job-seeker/job-seeker.component';
+import { EmployerComponent } from './pages/admin/employer/employer.component';
+import { JobPostComponent } from './pages/admin/job-post/job-post.component';
+
 
 
 
@@ -34,7 +38,12 @@ export const routes: Routes = [
   {path:'applicant-list',component: ApplicantListComponent, pathMatch:'full'},
   {path:'homepage',component: HomepageComponent, pathMatch:'full'},
   {path:'company',component: CompanyComponent, pathMatch:'full'},
-  {path:'categories',component: CategoriesComponent, pathMatch:'full'}
+  {path:'categories',component: CategoriesComponent, pathMatch:'full'},
+  {path:'job-seeker',component: JobSeekerComponent, pathMatch:'full'},
+  {path:'employer',component: EmployerComponent, pathMatch:'full'},
+  {path:'job-post-list',component: JobPostComponent, pathMatch:'full'},
+
+
 
 
 
